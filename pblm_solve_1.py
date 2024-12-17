@@ -10,8 +10,8 @@ def bitcount(a):
         a=a>>1
     print(f'setbits={setbitcount}')
     print(f'unsetbits={unsetbitcount}')
-# a=int(input('Enter a number: '))
-# bitcount(a)
+a=int(input('Enter a number: '))
+bitcount(a)
 # ------------------------------------------
 # 2.write a recursive code for multiplication table without using * operator
 def mult(a,b):
@@ -21,8 +21,8 @@ def mult(a,b):
         return -(a+mult(a,b+1))
     else:
         return a+mult(a,b-1)
-# prod=mult(3,1)
-# print(prod)
+prod=mult(3,1)
+print(prod)
 # ---------------------------------------
 # 3. search an element in the list. using the dictionary conversion method.
 l=[10,7,9,5,11,2]
@@ -33,7 +33,7 @@ def search_item(element,list):
         return mydict[element]
     else:
         return False
-# print(search_item(100,l))
+print(search_item(100,l))
 # 4. power function implement through recursive approach.
 def power(a,n):
     if n==0:
