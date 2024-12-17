@@ -16,7 +16,7 @@ def selection_sort(lst,n):
     return lst
 lst=[20,38,32,21,44,2,3,10,19,89]
 n=len(lst)
-# print(selection_sort(lst,n))
+print(selection_sort(lst,n))
 
 # recursive approach
 def selection_sort_recursive(lst1,m=0):
