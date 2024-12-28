@@ -32,4 +32,4 @@ def selection_sort_recursive(lst1,m=0):
     lst1[index]=tmp
     return selection_sort_recursive(lst1,m+1)
 lst1=[20,38,32,21,44,2,3,10,19,89]
-print(selection_sort_recursive(lst1))
+# print(selection_sort_recursive(lst1))

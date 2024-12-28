@@ -18,11 +18,11 @@ def mult(a,b):
     if b==0:
         return 0
     elif b<0:
-        return -(a+mult(a,b+1))
+        return -(a-mult(a,b+1))
     else:
         return a+mult(a,b-1)
-# prod=mult(3,1)
-# print(prod)
+prod=mult(-4,2)
+print(prod)
 # ---------------------------------------
 # 3. search an element in the list. using the dictionary conversion method.
 l=[10,7,9,5,11,2]
@@ -46,6 +46,4 @@ def power(a,n):
     elif n%2!=0:
         res1=power(a,n//2)
         return res1*res1*a
-
-
 print(power(2,-2))
