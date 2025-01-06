@@ -96,3 +96,19 @@ def maximum_count(s):
 lst=[(2,'hi'),(5,'whats'),(5,'going'),(2,'on')]
 lst.sort()
 # print(lst)
+
+def string_togglin(s):
+    for i in range(len(s)):
+        if s[i]>='A' and s[i]<='Z':
+            s[i]=s[i]+'a'-'A'
+# print(string_togglin('MURALI'))
+
+class my_class:
+    static_variable=0
+    def __init__(self):
+        self.static_variable=10
+    def increment(self):
+        my_class.static_variable+=1
+        return self.static_variable
+m=my_class()
+# print(m.increment())
